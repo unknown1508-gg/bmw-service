@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">BMW Service</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav id="nav">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Специализированный автосервис BMW</h1>
+    <p>Качественное обслуживание, профессиональная диагностика и ремонт вашей БМВ в Бишкеке.</p>
+    <a href="#booking" class="btn">Записаться на сервис</a>
+</section>
+
+<section id="about" class="about">
+    <h2>О нас</h2>
+    <img src="images/workplace.jpg" alt="Рабочее место мастерской BMW Service">
+    <p>
+        BMW Service - специализированный автосервис в Бишкеке, который занимается обслуживанием и ремонтом автомобилей BMW.
+        Мы работаем только с этой маркой, поэтому хорошо знаем особенности каждой модели и типичные неисправности.
+        Диагностику проводим на профессиональном оборудовании, а для ремонта используем оригинальные запчасти и качественные аналоги.
+        Наши мастера объясняют, что именно нужно сделать с автомобилем, и заранее согласовывают стоимость работ.
+        Мы ценим ваше время и доверие, поэтому стараемся выполнять каждый заказ точно в срок.
+    </p>
+</section>
+
+<section id="services" class="services">
+    <h2>Услуги</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/computer-diagnostics.jpg" alt="Компьютерная диагностика BMW">
+            <h3>Компьютерная диагностика</h3>
+            <p>Считываем ошибки, проверяем электронику и находим причину неисправности до начала ремонта.</p>
+        </div>
+        <div class="card">
+            <img src="images/oilchange.jpg" alt="Замена масла и техническое обслуживание">
+            <h3>Техническое обслуживание</h3>
+            <p>Замена масла, фильтров и жидкостей, проверка узлов по регламенту производителя.</p>
+        </div>
+        <div class="card">
+            <img src="images/installation.jpg" alt="Установка деталей ходовой части">
+            <h3>Ремонт ходовой части</h3>
+            <p>Диагностика и замена амортизаторов, рычагов, сайлентблоков, регулировка развала-схождения.</p>
+        </div>
+        <div class="card">
+            <img src="images/engine.jpg" alt="Ремонт двигателя">
+            <h3>Ремонт двигателя и КПП</h3>
+            <p>Устранение неисправностей двигателя и коробки передач, подбор запчастей для вашей модели.</p>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="booking">
+    <h2>Запись на сервис</h2>
+    <p class="booking-lead">Выберите услугу и оставьте свои данные.</p>
+    <form id="bookingForm" class="booking-form">
+        <div class="field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="name" required>
+        </div>
+        <div class="field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+996 ..." autocomplete="tel" required>
+        </div>
+        <div class="field">
+            <label for="model">Модель BMW</label>
+            <input type="text" id="model" name="model" placeholder=""required>
+        </div>
+        <div class="field">
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+                <option value="">Выберите услугу</option>
+                <option>Компьютерная диагностика</option>
+                <option>Техническое обслуживание</option>
+                <option>Ремонт ходовой части</option>
+                <option>Ремонт двигателя и КПП</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn full">Записаться</button>
+        <p id="formMessage" class="form-message full" hidden></p>
+    </form>
+</section>
+
+<section id="contacts" class="contacts">
+    <h2>Контакты</h2>
+    <ul class="contacts-list">
+        <li><strong>Адрес:</strong> г. Бишкек, ул. Чалдоварская, 91б</li>
+        <li><strong>Телефон:</strong> <a href="tel:+996555000000">+996 555 00-00-00</a></li>
+        <li><strong>Email:</strong> <a href="mailto:bmwservise150908250808@gmail.com">bmwservise150908250808@gmail.com</a></li>
+        <li><strong>Режим работы:</strong> Пн-Сб, 09:00-19:00</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2026 BMW Service.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
